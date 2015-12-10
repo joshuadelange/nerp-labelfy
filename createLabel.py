@@ -18,6 +18,6 @@ class createLabelCommand(sublime_plugin.TextCommand):
 
             self.view.replace(edit, region, '{{l.' + label_camel_case + '}}')
 
-            self.view.insert(edit, self.view.size(), "\n\n" + label_camel_case + " : " + label_text + "\n")
+            self.view.insert(edit, self.view.size(), "\n" + label_camel_case + " : " + label_text + "\n")
 
             pass
